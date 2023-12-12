@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta http-equip="X-UA-Compatible" content="IE = edge">
+  <!-- <meta name = "viewport" content = "widht= device-width, initial-scale = 1, user-scalable=0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="Иконка.png" type="image/x-icon">
+  <title>Магазин "Морожка"</title>
+</head>
+
+<body>
+  <div class="body">
+    <header class="header">
+      <div class="logo">
+        <h1>Морожка</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      </div>
+      <nav>
+        <div class="shit">
+          <ul>
+            <li><a href="index.html">Главная </a></li>
+            <li><a href="about.html">FAQ</a></li>
+            <li><a href="all.html">Мороженное</a></li>
+            <li><a href="com.html">Контакты</a></li>
+            <li><a href="buy.html"> Личный кабинет </a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="some">
+        <div class="grid-container">
+          <div class="grid-item">
+            <p>
+            <h2 id="some"> Немного о мороженном </h2>
+            </p>
+            <strong>
+              <p>Мороженное - самое вкусное лакомство, которое было придумано человечеством.
+                Главное его преимущество заключается в том, что оно является холодный, что спасает в жаркие
+                ледние дни.
+                Значит ли это, что мороженное можно есть только летом?
+              </p>
+              <p class="history">
+                Конечно нет. Мороженное можно есть в любое время года. Главное находится в правильном месте.
+                Например, летом и весно, его можно есть где угодно, а вот осенью и зимой, только дома, ведь
+                если его есть на улице, то можно быстро заболеть.<br>
+                Несмотря на то, что мороженное изместно во всем мире, сушествует множество вариаций как его
+                готовить, из каких ингридиентов его сделать и как подать.
+            </strong>
+            <div class="frame">
+              <button class="custom-btn anim" id="incrementButton" onclick="toggleTextVisibility()"><span>Читать
+                  дальше</span></button>
+              <script>
+                function toggleTextVisibility() {
+                  var historyText = document.querySelector('.history');
+                  historyText.classList.toggle('show');
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class=podbor>
+        <h2 id="podbor"> Виды мороженного </h2>
+        <div class="contain">
+          <div class="grid">
+            <div>
+              <div class="item">
+                <div class="content">
+                  <div class="content-overlay"></div>
+                  <img src="Мороженое1.png" alt="Изображение 2" class="ice">
+                  <div class="content-details fadeIn-bottom">
+                    <h3 class="content-title">Ванильное</h3>
+                    <p class="content-text">Классическое мороженное не имеющего какого-то особенного
+                      вкуса. Идеально подходит под все виды топингов. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="item">
+                <div class="content">
+                  <div class="content-overlay"></div>
+                  <img src="Мороженно2.png" alt="Изображение 2" class="ice">
+                  <div class="content-details fadeIn-bottom">
+                    <h3 class="content-title">Ягодное</h3>
+                    <p class="content-text"> Отличается тем, что в его состав входят различные ягоды.
+                      Самым популярным из таких является клубничное мороженное.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="item">
+                <div class="content">
+                  <div class="content-overlay"></div>
+                  <img src="Мороженка3.png" alt="Изображение 2" class="ice">
+                  <div class="content-details fadeIn-bottom">
+                    <h3 class="content-title">Шоколадное</h3>
+                    <p class="content-text"> Самое темное из всех видов мороженных. Находится на 2 месте
+                      по популярности после ванильного.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="item">
+                <div class="content">
+                  <div class="content-overlay"></div>
+                  <img src="Мороженка4.png" alt="Изображение 2" class="ice">
+                  <div class="content-details fadeIn-bottom">
+                    <h3 class="content-title">Ореховые</h3>
+                    <p class="content-text">Если в ягодные довабляют ягоды, то в это вид орехи. От всех остальных
+                      ореховых выделяется фисташковое, из-за своего зеленого цвета.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="item">
+                <div class="content">
+                  <div class="content-overlay"></div>
+                  <img src="Мороженка5.png" alt="Изображение 2" class="ice">
+                  <div class="content-details fadeIn-bottom">
+                    <h3 class="content-title">Карамельное</h3>
+                    <p class="content-text"> Отдаленно напоминает ванильное, однако имеет оранжеватый
+                      оттенок и намного слаще. Часто подают с добавлением карамели на само мороженное.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="recept">
+        <p>
+        <h2 id="recept"> Самый простой рецепт мороженного </h2>
+        </p>
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="Просто1.png" alt="Изображение" width="350px">
+          </div>
+          <div class="grid-item">
+            <p>Первое что нужно для приготовления мороженого, это ингридиенты: <br>
+              Сливки 30% <br>
+              Сгущенка
+            </p>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="Просто2.png" alt="Изображение" width="350px">
+          </div>
+          <div class="grid-item">
+            <p>Далее немного взбиваем сливки и парционно довабляем сгущенку. <br>
+              Отношение сливок к сгущенке 2 к 1.
+            </p>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="Просто3.png" alt="Изображение" width="350px">
+          </div>
+          <div class="grid-item">
+            <p>Заключительным этапом является поставить нашу массу в холодильник.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <p class="adress">
+            г. Москва, пр. Вернадского, д. 78
+          </p>
+          <p class="phone-number">
+            + 7 (777) 777-77-77
+          </p>
+          <p class="mail">
+            123@mail.ru
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>О сайте</h4>
+          <p class="example_1">
+            Обычный сайт с мороженным. Выглядит вкусно.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Быстрые ссылки</h4>
+          <ul>
+            <li><a href="#some" class="scroll-link"> Немного о мороженном</a></li>
+            <li><a href="#podbor" class="scroll-link">Виды мороженного</a></li>
+            <li><a href="#recept" class="scroll-link">Самый простой рецепт мороженного</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Соцсети</h4>
+          <p>Подпишитесь на рассылку, чтобы не пропустить ничего интересного</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+          </div>
+          <div class="subscribe">
+            <input placeholder="Ваш E-mail">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
